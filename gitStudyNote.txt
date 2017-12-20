@@ -1,0 +1,23 @@
+现在总结一下今天学的两点内容：
+初始化一个Git仓库，使用git init命令。
+git init 初始化git仓库
+git add <file> 添加文件
+git commit -m "描述内容"
+git status 查看当前的状态
+git diff <file> 查看文件修改的内容
+git log 查看日志
+git log --pretty=oneline 更简洁的log展示	
+git reset --hard HEAD^       --HEAD~100第一百个 返回之前的版本
+	等同于 git reset HEAD file   --假设文件提交到了暂存区中
+git checkout -- readme.txt   --修改工作区中的内容
+【远程仓库】
+参考
+	https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000
+第一次：git push -u origin master
+	从此以后：
+	git push origin master
+	git push 
+	如果子文件夹没同步进去，删了重git。一定要删了	
+	git rm -r --cached path
+
+【未解决问题】不能向”码云“中同步代码。ssh的问题
