@@ -1,0 +1,19 @@
+3个数字相加的和为0.A+B+C=0。
+转化为A+B=-C。这样算法时间复杂度从n^3转化为n^2。
+	
+1.将将处理数组nums排序
+2.一个指针指向低位low，一个指针指向高位high。
+3.输入元素数组nums 从头遍历，指针为k
+4.如果nums[k]>0 则break，必定有重复值。
+5.指针i=k+1 j=length-1，target=0-nums[k]
+6.当i<j时进行比较：nums[i],num[j]target存在三种大小关系
+	==target:
+		list.append
+		判断nums[i]与nums[i+1]是否相等、去重i++
+		判断nums[j]与nums[j-1]是否相等、去重j--
+		i++,j--
+	<target:
+		i++
+	>target:
+		j--
+7.返回List，类型list型list
